@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		929CC37627D723560056A5EB /* AROUNDTALKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC37527D723560056A5EB /* AROUNDTALKApp.swift */; };
+		929CC37827D723560056A5EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC37727D723560056A5EB /* ContentView.swift */; };
+		929CC37A27D723580056A5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929CC37927D723580056A5EB /* Assets.xcassets */; };
+		929CC37D27D723580056A5EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929CC37C27D723580056A5EB /* Preview Assets.xcassets */; };
+		929CC38727D723580056A5EB /* AROUNDTALKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC38627D723580056A5EB /* AROUNDTALKTests.swift */; };
+		929CC39127D723580056A5EB /* AROUNDTALKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC39027D723580056A5EB /* AROUNDTALKUITests.swift */; };
+		929CC39327D723580056A5EB /* AROUNDTALKUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC39227D723580056A5EB /* AROUNDTALKUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		929CC38327D723580056A5EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 929CC36A27D723560056A5EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929CC37127D723560056A5EB;
+			remoteInfo = AROUNDTALK;
+		};
+		929CC38D27D723580056A5EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 929CC36A27D723560056A5EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929CC37127D723560056A5EB;
+			remoteInfo = AROUNDTALK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		929CC37227D723560056A5EB /* AROUNDTALK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AROUNDTALK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		929CC37527D723560056A5EB /* AROUNDTALKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROUNDTALKApp.swift; sourceTree = "<group>"; };
+		929CC37727D723560056A5EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		929CC37927D723580056A5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		929CC37C27D723580056A5EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		929CC38227D723580056A5EB /* AROUNDTALKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AROUNDTALKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		929CC38627D723580056A5EB /* AROUNDTALKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROUNDTALKTests.swift; sourceTree = "<group>"; };
+		929CC38C27D723580056A5EB /* AROUNDTALKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AROUNDTALKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		929CC39027D723580056A5EB /* AROUNDTALKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROUNDTALKUITests.swift; sourceTree = "<group>"; };
+		929CC39227D723580056A5EB /* AROUNDTALKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROUNDTALKUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		929CC36F27D723560056A5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929CC37F27D723580056A5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929CC38927D723580056A5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		929CC36927D723560056A5EB = {
+			isa = PBXGroup;
+			children = (
+				929CC37427D723560056A5EB /* AROUNDTALK */,
+				929CC38527D723580056A5EB /* AROUNDTALKTests */,
+				929CC38F27D723580056A5EB /* AROUNDTALKUITests */,
+				929CC37327D723560056A5EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		929CC37327D723560056A5EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				929CC37227D723560056A5EB /* AROUNDTALK.app */,
+				929CC38227D723580056A5EB /* AROUNDTALKTests.xctest */,
+				929CC38C27D723580056A5EB /* AROUNDTALKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		929CC37427D723560056A5EB /* AROUNDTALK */ = {
+			isa = PBXGroup;
+			children = (
+				929CC37527D723560056A5EB /* AROUNDTALKApp.swift */,
+				929CC37727D723560056A5EB /* ContentView.swift */,
+				929CC37927D723580056A5EB /* Assets.xcassets */,
+				929CC37B27D723580056A5EB /* Preview Content */,
+			);
+			path = AROUNDTALK;
+			sourceTree = "<group>";
+		};
+		929CC37B27D723580056A5EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				929CC37C27D723580056A5EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		929CC38527D723580056A5EB /* AROUNDTALKTests */ = {
+			isa = PBXGroup;
+			children = (
+				929CC38627D723580056A5EB /* AROUNDTALKTests.swift */,
+			);
+			path = AROUNDTALKTests;
+			sourceTree = "<group>";
+		};
+		929CC38F27D723580056A5EB /* AROUNDTALKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				929CC39027D723580056A5EB /* AROUNDTALKUITests.swift */,
+				929CC39227D723580056A5EB /* AROUNDTALKUITestsLaunchTests.swift */,
+			);
+			path = AROUNDTALKUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		929CC37127D723560056A5EB /* AROUNDTALK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929CC39627D723580056A5EB /* Build configuration list for PBXNativeTarget "AROUNDTALK" */;
+			buildPhases = (
+				929CC36E27D723560056A5EB /* Sources */,
+				929CC36F27D723560056A5EB /* Frameworks */,
+				929CC37027D723560056A5EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AROUNDTALK;
+			productName = AROUNDTALK;
+			productReference = 929CC37227D723560056A5EB /* AROUNDTALK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		929CC38127D723580056A5EB /* AROUNDTALKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929CC39927D723580056A5EB /* Build configuration list for PBXNativeTarget "AROUNDTALKTests" */;
+			buildPhases = (
+				929CC37E27D723580056A5EB /* Sources */,
+				929CC37F27D723580056A5EB /* Frameworks */,
+				929CC38027D723580056A5EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				929CC38427D723580056A5EB /* PBXTargetDependency */,
+			);
+			name = AROUNDTALKTests;
+			productName = AROUNDTALKTests;
+			productReference = 929CC38227D723580056A5EB /* AROUNDTALKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		929CC38B27D723580056A5EB /* AROUNDTALKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929CC39C27D723580056A5EB /* Build configuration list for PBXNativeTarget "AROUNDTALKUITests" */;
+			buildPhases = (
+				929CC38827D723580056A5EB /* Sources */,
+				929CC38927D723580056A5EB /* Frameworks */,
+				929CC38A27D723580056A5EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				929CC38E27D723580056A5EB /* PBXTargetDependency */,
+			);
+			name = AROUNDTALKUITests;
+			productName = AROUNDTALKUITests;
+			productReference = 929CC38C27D723580056A5EB /* AROUNDTALKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		929CC36A27D723560056A5EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					929CC37127D723560056A5EB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					929CC38127D723580056A5EB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 929CC37127D723560056A5EB;
+					};
+					929CC38B27D723580056A5EB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 929CC37127D723560056A5EB;
+					};
+				};
+			};
+			buildConfigurationList = 929CC36D27D723560056A5EB /* Build configuration list for PBXProject "AROUNDTALK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 929CC36927D723560056A5EB;
+			productRefGroup = 929CC37327D723560056A5EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				929CC37127D723560056A5EB /* AROUNDTALK */,
+				929CC38127D723580056A5EB /* AROUNDTALKTests */,
+				929CC38B27D723580056A5EB /* AROUNDTALKUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		929CC37027D723560056A5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929CC37D27D723580056A5EB /* Preview Assets.xcassets in Resources */,
+				929CC37A27D723580056A5EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929CC38027D723580056A5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929CC38A27D723580056A5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		929CC36E27D723560056A5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929CC37827D723560056A5EB /* ContentView.swift in Sources */,
+				929CC37627D723560056A5EB /* AROUNDTALKApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929CC37E27D723580056A5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929CC38727D723580056A5EB /* AROUNDTALKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929CC38827D723580056A5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929CC39127D723580056A5EB /* AROUNDTALKUITests.swift in Sources */,
+				929CC39327D723580056A5EB /* AROUNDTALKUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		929CC38427D723580056A5EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 929CC37127D723560056A5EB /* AROUNDTALK */;
+			targetProxy = 929CC38327D723580056A5EB /* PBXContainerItemProxy */;
+		};
+		929CC38E27D723580056A5EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 929CC37127D723560056A5EB /* AROUNDTALK */;
+			targetProxy = 929CC38D27D723580056A5EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		929CC39427D723580056A5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		929CC39527D723580056A5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		929CC39727D723580056A5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AROUNDTALK/Preview Content\"";
+				DEVELOPMENT_TEAM = P5QSBGBP3C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kimxwan0319.AROUNDTALK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		929CC39827D723580056A5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AROUNDTALK/Preview Content\"";
+				DEVELOPMENT_TEAM = P5QSBGBP3C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kimxwan0319.AROUNDTALK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		929CC39A27D723580056A5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5QSBGBP3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kimxwan0319.AROUNDTALKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AROUNDTALK.app/AROUNDTALK";
+			};
+			name = Debug;
+		};
+		929CC39B27D723580056A5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5QSBGBP3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kimxwan0319.AROUNDTALKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AROUNDTALK.app/AROUNDTALK";
+			};
+			name = Release;
+		};
+		929CC39D27D723580056A5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5QSBGBP3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kimxwan0319.AROUNDTALKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AROUNDTALK;
+			};
+			name = Debug;
+		};
+		929CC39E27D723580056A5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5QSBGBP3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kimxwan0319.AROUNDTALKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AROUNDTALK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		929CC36D27D723560056A5EB /* Build configuration list for PBXProject "AROUNDTALK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929CC39427D723580056A5EB /* Debug */,
+				929CC39527D723580056A5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929CC39627D723580056A5EB /* Build configuration list for PBXNativeTarget "AROUNDTALK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929CC39727D723580056A5EB /* Debug */,
+				929CC39827D723580056A5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929CC39927D723580056A5EB /* Build configuration list for PBXNativeTarget "AROUNDTALKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929CC39A27D723580056A5EB /* Debug */,
+				929CC39B27D723580056A5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929CC39C27D723580056A5EB /* Build configuration list for PBXNativeTarget "AROUNDTALKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929CC39D27D723580056A5EB /* Debug */,
+				929CC39E27D723580056A5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 929CC36A27D723560056A5EB /* Project object */;
+}
