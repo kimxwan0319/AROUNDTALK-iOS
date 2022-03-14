@@ -11,7 +11,7 @@ import SwiftUI
 struct AROUNDTALKApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
