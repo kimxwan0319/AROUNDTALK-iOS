@@ -16,7 +16,11 @@ struct MapView: View {
                 MapAnnotation(
                     coordinate: item.coordinate,
                     content: {
-                        ChatView(chatMessage: item.content)
+                        if item.isMine {
+                            MyChatView(chatMessage: item.content)
+                        } else {
+                            ChatView(chatMessage: item.content)
+                        }
                     }
                 )
             }
