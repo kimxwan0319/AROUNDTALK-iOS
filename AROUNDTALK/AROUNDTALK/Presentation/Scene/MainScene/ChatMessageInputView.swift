@@ -1,7 +1,9 @@
 import SwiftUI
 
 struct ChatMessageInputView: View {
-    @StateObject var mainViewModel: MainViewModel
+
+    @EnvironmentObject var mainViewModel: MainViewModel
+
     var body: some View {
         HStack {
             TextField("", text: $mainViewModel.chatText)
@@ -14,14 +16,16 @@ struct ChatMessageInputView: View {
                 ))
             Button(
                 action: {
-                    mainViewModel.sendChat()
+                    Task {
+                        try? await mainViewModel.sendChat()
+                    }
                 },
                 label: { Image(systemName: "arrow.up")
                     .tint(Color(uiColor: .white))
                 }
             )
                 .frame(width: 26, height: 26)
-                .background(Color("AccentColor"))
+                .background(Color.accentColor)
                 .cornerRadius(13)
                 .padding(EdgeInsets(
                     top: 4,
@@ -37,6 +41,6 @@ struct ChatMessageInputView: View {
                 .stroke(.gray, lineWidth: 1)
         )
         .padding(14)
-        .background(Color("MainColor"))
+        .background(Color.mainColor)
     }
 }

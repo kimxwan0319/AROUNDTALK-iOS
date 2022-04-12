@@ -4,7 +4,7 @@ import MapKit
 
 struct MapView: View {
 
-    @StateObject var mainViewModel: MainViewModel
+    @EnvironmentObject var mainViewModel: MainViewModel
 
     var body: some View {
         Map(
@@ -17,9 +17,9 @@ struct MapView: View {
                     coordinate: item.coordinate,
                     content: {
                         if item.isMine {
-                            MyChatView(chatMessage: item.content)
+                            MyChatView(emoji: item.emoji, chatMessage: item.content)
                         } else {
-                            ChatView(chatMessage: item.content)
+                            ChatView(emoji: item.emoji, chatMessage: item.content)
                         }
                     }
                 )

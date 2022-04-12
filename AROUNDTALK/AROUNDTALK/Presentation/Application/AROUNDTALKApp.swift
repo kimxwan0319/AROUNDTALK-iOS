@@ -1,17 +1,24 @@
-//
-//  AROUNDTALKApp.swift
-//  AROUNDTALK
-//
-//  Created by 김수완 on 2022/03/08.
-//
-
 import SwiftUI
+
+import Firebase
 
 @main
 struct AROUNDTALKApp: App {
+
+    let dependency: AppDependency
+
+    init() {
+        FirebaseApp.configure()
+        self.dependency = AppDependency.resolve()
+    }
+
     var body: some Scene {
         WindowGroup {
-            MainView()
+            if self.dependency.checkIsEmojiSetUseCase.excute() {
+                dependency.mainView
+            } else {
+                dependency.onboardingView
+            }
         }
     }
 }

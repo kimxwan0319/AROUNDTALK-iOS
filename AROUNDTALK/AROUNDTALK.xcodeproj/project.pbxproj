@@ -7,43 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922FAEAB27FC04D100AB29C6 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922FAEAA27FC04D100AB29C6 /* OnboardingViewModel.swift */; };
+		922FAEAD27FC18DC00AB29C6 /* EmojiRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922FAEAC27FC18DC00AB29C6 /* EmojiRepositoryImpl.swift */; };
+		922FAEAF27FC18E300AB29C6 /* EmojiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922FAEAE27FC18E200AB29C6 /* EmojiRepository.swift */; };
+		922FAEB127FC1EE500AB29C6 /* FetchEmojiUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922FAEB027FC1EE500AB29C6 /* FetchEmojiUseCase.swift */; };
+		922FAEB327FC1EF700AB29C6 /* SetMyEmojiUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922FAEB227FC1EF700AB29C6 /* SetMyEmojiUseCase.swift */; };
+		9256FC5927D8D887002EF6B4 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256FC5827D8D887002EF6B4 /* MainViewModel.swift */; };
+		9256FC5B27DAD73E002EF6B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9256FC5A27DAD73E002EF6B4 /* GoogleService-Info.plist */; };
+		9256FC5E27DADB1A002EF6B4 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9256FC5D27DADB1A002EF6B4 /* FirebaseDatabase */; };
+		9256FC6927DADEE7002EF6B4 /* FetchArroundTalksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256FC6827DADEE7002EF6B4 /* FetchArroundTalksUseCase.swift */; };
+		9256FC6B27DADEF9002EF6B4 /* SendChatUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256FC6A27DADEF9002EF6B4 /* SendChatUseCase.swift */; };
+		92734D7027FFDCDB0048B0A2 /* CheckIsEmojiSetUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92734D6F27FFDCDB0048B0A2 /* CheckIsEmojiSetUseCase.swift */; };
+		92734D73280158CB0048B0A2 /* ChangeEmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92734D72280158CB0048B0A2 /* ChangeEmojiViewModel.swift */; };
+		928706DA27DF29BD00FC2DC3 /* ChatEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928706D927DF29BD00FC2DC3 /* ChatEntity.swift */; };
+		928706E627DF9DEF00FC2DC3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928706E527DF9DEF00FC2DC3 /* MapView.swift */; };
+		928706E827DF9E2300FC2DC3 /* MyChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928706E727DF9E2300FC2DC3 /* MyChatView.swift */; };
+		928706EA27DF9E8800FC2DC3 /* ChatMessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928706E927DF9E8800FC2DC3 /* ChatMessageInputView.swift */; };
+		928706EC27DFA04B00FC2DC3 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928706EB27DFA04B00FC2DC3 /* ChatView.swift */; };
+		928706EF27E0755000FC2DC3 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928706EE27E0755000FC2DC3 /* AppDependency.swift */; };
+		928706F127E0834A00FC2DC3 /* FirebaseDataBaseDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928706F027E0834A00FC2DC3 /* FirebaseDataBaseDataSourceImpl.swift */; };
+		928706F327E0EC0500FC2DC3 /* FIRDatabaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928706F227E0EC0500FC2DC3 /* FIRDatabaseAPI.swift */; };
+		928706F527E0ECFC00FC2DC3 /* FIRDatabaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928706F427E0ECFC00FC2DC3 /* FIRDatabaseProvider.swift */; };
+		929946AC27EA04F900F38FE5 /* String + random().swift in Sources */ = {isa = PBXBuildFile; fileRef = 929946AB27EA04F900F38FE5 /* String + random().swift */; };
 		929CC37627D723560056A5EB /* AROUNDTALKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC37527D723560056A5EB /* AROUNDTALKApp.swift */; };
-		929CC37827D723560056A5EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC37727D723560056A5EB /* ContentView.swift */; };
+		929CC37827D723560056A5EB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC37727D723560056A5EB /* MainView.swift */; };
 		929CC37A27D723580056A5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929CC37927D723580056A5EB /* Assets.xcassets */; };
-		929CC37D27D723580056A5EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929CC37C27D723580056A5EB /* Preview Assets.xcassets */; };
-		929CC38727D723580056A5EB /* AROUNDTALKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC38627D723580056A5EB /* AROUNDTALKTests.swift */; };
-		929CC39127D723580056A5EB /* AROUNDTALKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC39027D723580056A5EB /* AROUNDTALKUITests.swift */; };
-		929CC39327D723580056A5EB /* AROUNDTALKUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CC39227D723580056A5EB /* AROUNDTALKUITestsLaunchTests.swift */; };
+		92A3C2F127F682E30002A409 /* CoreLocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C2F027F682E30002A409 /* CoreLocationDataSource.swift */; };
+		92A3C2F327F685AA0002A409 /* CoreLocationDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C2F227F685AA0002A409 /* CoreLocationDataSourceImpl.swift */; };
+		92A3C2F527F6962C0002A409 /* UserLocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C2F427F6962C0002A409 /* UserLocationRepository.swift */; };
+		92A3C2F727F69AA40002A409 /* UserLocationRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C2F627F69AA40002A409 /* UserLocationRepositoryImpl.swift */; };
+		92A3C2FB27F984200002A409 /* OnboaringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C2FA27F984200002A409 /* OnboaringView.swift */; };
+		92A3C2FD27F989EF0002A409 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C2FC27F989EF0002A409 /* DefaultButton.swift */; };
+		92A3C30027F98C490002A409 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C2FF27F98C490002A409 /* Color.swift */; };
+		92A3C30227F98D800002A409 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C30127F98D800002A409 /* Image.swift */; };
+		92A3C30427F9DF200002A409 /* ChangeEmojiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C30327F9DF200002A409 /* ChangeEmojiModalView.swift */; };
+		92A3C30727FA6BC90002A409 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C30627FA6BC90002A409 /* FlatButton.swift */; };
+		92A3C35D27FAB5090002A409 /* EmojiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C35C27FAB5090002A409 /* EmojiTextField.swift */; };
+		92DA074127E1297F00114A4F /* FIRDatabaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA074027E1297F00114A4F /* FIRDatabaseTargetType.swift */; };
+		92DA074327E12AA300114A4F /* FIRDatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA074227E12AA300114A4F /* FIRDatabaseError.swift */; };
+		92DA074C27E1C78D00114A4F /* UserDefaultsDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA074B27E1C78D00114A4F /* UserDefaultsDataSourceImpl.swift */; };
+		92DA074E27E1CA2200114A4F /* UserDefaultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA074D27E1CA2200114A4F /* UserDefaultsDataSource.swift */; };
+		92DA075027E1CA8300114A4F /* FirebaseDataBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA074F27E1CA8300114A4F /* FirebaseDataBaseDataSource.swift */; };
+		92DA075227E1D1B700114A4F /* ChatAnnotationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA075127E1D1B700114A4F /* ChatAnnotationItem.swift */; };
+		92DA075D27E74EBD00114A4F /* AsyncThrowingStream + map().swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA075C27E74EBD00114A4F /* AsyncThrowingStream + map().swift */; };
+		92DA076027E754E500114A4F /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 92DA075F27E754E500114A4F /* RxBlocking */; };
+		92DA076227E754E500114A4F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 92DA076127E754E500114A4F /* RxRelay */; };
+		92DA076427E754E500114A4F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 92DA076327E754E500114A4F /* RxSwift */; };
+		92DA076827E767C800114A4F /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA076727E767C800114A4F /* ChatRepository.swift */; };
+		92DA076A27E76B1100114A4F /* ChatRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA076927E76B1100114A4F /* ChatRepositoryImpl.swift */; };
+		92DA076C27E84BE900114A4F /* AsyncThrowingStream + outspread().swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA076B27E84BE900114A4F /* AsyncThrowingStream + outspread().swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		929CC38327D723580056A5EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 929CC36A27D723560056A5EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 929CC37127D723560056A5EB;
-			remoteInfo = AROUNDTALK;
-		};
-		929CC38D27D723580056A5EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 929CC36A27D723560056A5EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 929CC37127D723560056A5EB;
-			remoteInfo = AROUNDTALK;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		922FAEAA27FC04D100AB29C6 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		922FAEAC27FC18DC00AB29C6 /* EmojiRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRepositoryImpl.swift; sourceTree = "<group>"; };
+		922FAEAE27FC18E200AB29C6 /* EmojiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRepository.swift; sourceTree = "<group>"; };
+		922FAEB027FC1EE500AB29C6 /* FetchEmojiUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEmojiUseCase.swift; sourceTree = "<group>"; };
+		922FAEB227FC1EF700AB29C6 /* SetMyEmojiUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMyEmojiUseCase.swift; sourceTree = "<group>"; };
+		9256FC5827D8D887002EF6B4 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9256FC5A27DAD73E002EF6B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9256FC6827DADEE7002EF6B4 /* FetchArroundTalksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArroundTalksUseCase.swift; sourceTree = "<group>"; };
+		9256FC6A27DADEF9002EF6B4 /* SendChatUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendChatUseCase.swift; sourceTree = "<group>"; };
+		92734D6F27FFDCDB0048B0A2 /* CheckIsEmojiSetUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIsEmojiSetUseCase.swift; sourceTree = "<group>"; };
+		92734D72280158CB0048B0A2 /* ChangeEmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmojiViewModel.swift; sourceTree = "<group>"; };
+		928706D927DF29BD00FC2DC3 /* ChatEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEntity.swift; sourceTree = "<group>"; };
+		928706E527DF9DEF00FC2DC3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		928706E727DF9E2300FC2DC3 /* MyChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatView.swift; sourceTree = "<group>"; };
+		928706E927DF9E8800FC2DC3 /* ChatMessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageInputView.swift; sourceTree = "<group>"; };
+		928706EB27DFA04B00FC2DC3 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		928706EE27E0755000FC2DC3 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		928706F027E0834A00FC2DC3 /* FirebaseDataBaseDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataBaseDataSourceImpl.swift; sourceTree = "<group>"; };
+		928706F227E0EC0500FC2DC3 /* FIRDatabaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseAPI.swift; sourceTree = "<group>"; };
+		928706F427E0ECFC00FC2DC3 /* FIRDatabaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseProvider.swift; sourceTree = "<group>"; };
+		929946AB27EA04F900F38FE5 /* String + random().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + random().swift"; sourceTree = "<group>"; };
 		929CC37227D723560056A5EB /* AROUNDTALK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AROUNDTALK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929CC37527D723560056A5EB /* AROUNDTALKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROUNDTALKApp.swift; sourceTree = "<group>"; };
-		929CC37727D723560056A5EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		929CC37727D723560056A5EB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		929CC37927D723580056A5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		929CC37C27D723580056A5EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		929CC38227D723580056A5EB /* AROUNDTALKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AROUNDTALKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		929CC38627D723580056A5EB /* AROUNDTALKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROUNDTALKTests.swift; sourceTree = "<group>"; };
-		929CC38C27D723580056A5EB /* AROUNDTALKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AROUNDTALKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		929CC39027D723580056A5EB /* AROUNDTALKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROUNDTALKUITests.swift; sourceTree = "<group>"; };
-		929CC39227D723580056A5EB /* AROUNDTALKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROUNDTALKUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92A3C2F027F682E30002A409 /* CoreLocationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationDataSource.swift; sourceTree = "<group>"; };
+		92A3C2F227F685AA0002A409 /* CoreLocationDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationDataSourceImpl.swift; sourceTree = "<group>"; };
+		92A3C2F427F6962C0002A409 /* UserLocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationRepository.swift; sourceTree = "<group>"; };
+		92A3C2F627F69AA40002A409 /* UserLocationRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationRepositoryImpl.swift; sourceTree = "<group>"; };
+		92A3C2FA27F984200002A409 /* OnboaringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboaringView.swift; sourceTree = "<group>"; };
+		92A3C2FC27F989EF0002A409 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		92A3C2FF27F98C490002A409 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		92A3C30127F98D800002A409 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		92A3C30327F9DF200002A409 /* ChangeEmojiModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmojiModalView.swift; sourceTree = "<group>"; };
+		92A3C30627FA6BC90002A409 /* FlatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
+		92A3C35C27FAB5090002A409 /* EmojiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTextField.swift; sourceTree = "<group>"; };
+		92DA074027E1297F00114A4F /* FIRDatabaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseTargetType.swift; sourceTree = "<group>"; };
+		92DA074227E12AA300114A4F /* FIRDatabaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseError.swift; sourceTree = "<group>"; };
+		92DA074B27E1C78D00114A4F /* UserDefaultsDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataSourceImpl.swift; sourceTree = "<group>"; };
+		92DA074D27E1CA2200114A4F /* UserDefaultsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataSource.swift; sourceTree = "<group>"; };
+		92DA074F27E1CA8300114A4F /* FirebaseDataBaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataBaseDataSource.swift; sourceTree = "<group>"; };
+		92DA075127E1D1B700114A4F /* ChatAnnotationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAnnotationItem.swift; sourceTree = "<group>"; };
+		92DA075C27E74EBD00114A4F /* AsyncThrowingStream + map().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncThrowingStream + map().swift"; sourceTree = "<group>"; };
+		92DA076727E767C800114A4F /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
+		92DA076927E76B1100114A4F /* ChatRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepositoryImpl.swift; sourceTree = "<group>"; };
+		92DA076B27E84BE900114A4F /* AsyncThrowingStream + outspread().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncThrowingStream + outspread().swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,32 +112,163 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929CC37F27D723580056A5EB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929CC38927D723580056A5EB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				92DA076227E754E500114A4F /* RxRelay in Frameworks */,
+				9256FC5E27DADB1A002EF6B4 /* FirebaseDatabase in Frameworks */,
+				92DA076427E754E500114A4F /* RxSwift in Frameworks */,
+				92DA076027E754E500114A4F /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		923034C627F54F37000C3CBC /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				92A3C2F027F682E30002A409 /* CoreLocationDataSource.swift */,
+				92A3C2F227F685AA0002A409 /* CoreLocationDataSourceImpl.swift */,
+			);
+			path = CoreLocation;
+			sourceTree = "<group>";
+		};
+		9256FC5727D8D807002EF6B4 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				92A3C30527FA6BAF0002A409 /* Buttons */,
+				92A3C2F827F983580002A409 /* MainScene */,
+				92734D71280158AF0048B0A2 /* ChangeRmojiScene */,
+				92A3C2F927F983A50002A409 /* OnboardingScene */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		9256FC5F27DADB23002EF6B4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9256FC6527DADEA6002EF6B4 /* Repository */,
+				9256FC6427DADB82002EF6B4 /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9256FC6027DADB28002EF6B4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				92DA075B27E74E8500114A4F /* Extension */,
+				928706D827DF29AA00FC2DC3 /* Entity */,
+				9256FC6727DADEB4002EF6B4 /* UseCase */,
+				9256FC6627DADEAD002EF6B4 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9256FC6127DADB30002EF6B4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9256FC6227DADB48002EF6B4 /* Application */,
+				9256FC5727D8D807002EF6B4 /* Scene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9256FC6227DADB48002EF6B4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				929CC37527D723560056A5EB /* AROUNDTALKApp.swift */,
+				928706EE27E0755000FC2DC3 /* AppDependency.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9256FC6327DADB61002EF6B4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9256FC5A27DAD73E002EF6B4 /* GoogleService-Info.plist */,
+				92A3C2FE27F98C290002A409 /* Assets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9256FC6427DADB82002EF6B4 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				92DA074827E1C66000114A4F /* LocalDataSource */,
+				9256FC6C27DADFCA002EF6B4 /* RemoteDataSource */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		9256FC6527DADEA6002EF6B4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				92DA076927E76B1100114A4F /* ChatRepositoryImpl.swift */,
+				92A3C2F627F69AA40002A409 /* UserLocationRepositoryImpl.swift */,
+				922FAEAC27FC18DC00AB29C6 /* EmojiRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9256FC6627DADEAD002EF6B4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				92DA076727E767C800114A4F /* ChatRepository.swift */,
+				92A3C2F427F6962C0002A409 /* UserLocationRepository.swift */,
+				922FAEAE27FC18E200AB29C6 /* EmojiRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9256FC6727DADEB4002EF6B4 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				92734D6F27FFDCDB0048B0A2 /* CheckIsEmojiSetUseCase.swift */,
+				9256FC6827DADEE7002EF6B4 /* FetchArroundTalksUseCase.swift */,
+				9256FC6A27DADEF9002EF6B4 /* SendChatUseCase.swift */,
+				922FAEB027FC1EE500AB29C6 /* FetchEmojiUseCase.swift */,
+				922FAEB227FC1EF700AB29C6 /* SetMyEmojiUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		9256FC6C27DADFCA002EF6B4 /* RemoteDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				92DA074527E1AAB800114A4F /* FirebaseDataBase */,
+			);
+			path = RemoteDataSource;
+			sourceTree = "<group>";
+		};
+		92734D71280158AF0048B0A2 /* ChangeRmojiScene */ = {
+			isa = PBXGroup;
+			children = (
+				92A3C30327F9DF200002A409 /* ChangeEmojiModalView.swift */,
+				92734D72280158CB0048B0A2 /* ChangeEmojiViewModel.swift */,
+			);
+			path = ChangeRmojiScene;
+			sourceTree = "<group>";
+		};
+		928706D827DF29AA00FC2DC3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				928706D927DF29BD00FC2DC3 /* ChatEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		928706ED27DFA05400FC2DC3 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				92DA075127E1D1B700114A4F /* ChatAnnotationItem.swift */,
+				928706E727DF9E2300FC2DC3 /* MyChatView.swift */,
+				928706EB27DFA04B00FC2DC3 /* ChatView.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
 		929CC36927D723560056A5EB = {
 			isa = PBXGroup;
 			children = (
 				929CC37427D723560056A5EB /* AROUNDTALK */,
-				929CC38527D723580056A5EB /* AROUNDTALKTests */,
-				929CC38F27D723580056A5EB /* AROUNDTALKUITests */,
 				929CC37327D723560056A5EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,8 +277,6 @@
 			isa = PBXGroup;
 			children = (
 				929CC37227D723560056A5EB /* AROUNDTALK.app */,
-				929CC38227D723580056A5EB /* AROUNDTALKTests.xctest */,
-				929CC38C27D723580056A5EB /* AROUNDTALKUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,37 +284,110 @@
 		929CC37427D723560056A5EB /* AROUNDTALK */ = {
 			isa = PBXGroup;
 			children = (
-				929CC37527D723560056A5EB /* AROUNDTALKApp.swift */,
-				929CC37727D723560056A5EB /* ContentView.swift */,
-				929CC37927D723580056A5EB /* Assets.xcassets */,
-				929CC37B27D723580056A5EB /* Preview Content */,
+				9256FC6327DADB61002EF6B4 /* Resource */,
+				9256FC6127DADB30002EF6B4 /* Presentation */,
+				9256FC6027DADB28002EF6B4 /* Domain */,
+				9256FC5F27DADB23002EF6B4 /* Data */,
 			);
 			path = AROUNDTALK;
 			sourceTree = "<group>";
 		};
-		929CC37B27D723580056A5EB /* Preview Content */ = {
+		92A3C2F827F983580002A409 /* MainScene */ = {
 			isa = PBXGroup;
 			children = (
-				929CC37C27D723580056A5EB /* Preview Assets.xcassets */,
+				928706ED27DFA05400FC2DC3 /* ChatView */,
+				928706E927DF9E8800FC2DC3 /* ChatMessageInputView.swift */,
+				928706E527DF9DEF00FC2DC3 /* MapView.swift */,
+				929CC37727D723560056A5EB /* MainView.swift */,
+				9256FC5827D8D887002EF6B4 /* MainViewModel.swift */,
 			);
-			path = "Preview Content";
+			path = MainScene;
 			sourceTree = "<group>";
 		};
-		929CC38527D723580056A5EB /* AROUNDTALKTests */ = {
+		92A3C2F927F983A50002A409 /* OnboardingScene */ = {
 			isa = PBXGroup;
 			children = (
-				929CC38627D723580056A5EB /* AROUNDTALKTests.swift */,
+				92A3C35C27FAB5090002A409 /* EmojiTextField.swift */,
+				92A3C2FA27F984200002A409 /* OnboaringView.swift */,
+				922FAEAA27FC04D100AB29C6 /* OnboardingViewModel.swift */,
 			);
-			path = AROUNDTALKTests;
+			path = OnboardingScene;
 			sourceTree = "<group>";
 		};
-		929CC38F27D723580056A5EB /* AROUNDTALKUITests */ = {
+		92A3C2FE27F98C290002A409 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				929CC39027D723580056A5EB /* AROUNDTALKUITests.swift */,
-				929CC39227D723580056A5EB /* AROUNDTALKUITestsLaunchTests.swift */,
+				929CC37927D723580056A5EB /* Assets.xcassets */,
+				92A3C2FF27F98C490002A409 /* Color.swift */,
+				92A3C30127F98D800002A409 /* Image.swift */,
 			);
-			path = AROUNDTALKUITests;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		92A3C30527FA6BAF0002A409 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				92A3C2FC27F989EF0002A409 /* DefaultButton.swift */,
+				92A3C30627FA6BC90002A409 /* FlatButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		92DA073B27E128E800114A4F /* FirebaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				928706F427E0ECFC00FC2DC3 /* FIRDatabaseProvider.swift */,
+				92DA074027E1297F00114A4F /* FIRDatabaseTargetType.swift */,
+				92DA074227E12AA300114A4F /* FIRDatabaseError.swift */,
+			);
+			path = FirebaseModule;
+			sourceTree = "<group>";
+		};
+		92DA074427E1AAA400114A4F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				928706F227E0EC0500FC2DC3 /* FIRDatabaseAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		92DA074527E1AAB800114A4F /* FirebaseDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				92DA074427E1AAA400114A4F /* API */,
+				92DA073B27E128E800114A4F /* FirebaseModule */,
+				92DA074F27E1CA8300114A4F /* FirebaseDataBaseDataSource.swift */,
+				928706F027E0834A00FC2DC3 /* FirebaseDataBaseDataSourceImpl.swift */,
+			);
+			path = FirebaseDataBase;
+			sourceTree = "<group>";
+		};
+		92DA074827E1C66000114A4F /* LocalDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				923034C627F54F37000C3CBC /* CoreLocation */,
+				92DA074927E1C66C00114A4F /* UserDefault */,
+			);
+			path = LocalDataSource;
+			sourceTree = "<group>";
+		};
+		92DA074927E1C66C00114A4F /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				92DA074D27E1CA2200114A4F /* UserDefaultsDataSource.swift */,
+				92DA074B27E1C78D00114A4F /* UserDefaultsDataSourceImpl.swift */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		92DA075B27E74E8500114A4F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				92DA075C27E74EBD00114A4F /* AsyncThrowingStream + map().swift */,
+				92DA076B27E84BE900114A4F /* AsyncThrowingStream + outspread().swift */,
+				929946AB27EA04F900F38FE5 /* String + random().swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,45 +406,15 @@
 			dependencies = (
 			);
 			name = AROUNDTALK;
+			packageProductDependencies = (
+				9256FC5D27DADB1A002EF6B4 /* FirebaseDatabase */,
+				92DA075F27E754E500114A4F /* RxBlocking */,
+				92DA076127E754E500114A4F /* RxRelay */,
+				92DA076327E754E500114A4F /* RxSwift */,
+			);
 			productName = AROUNDTALK;
 			productReference = 929CC37227D723560056A5EB /* AROUNDTALK.app */;
 			productType = "com.apple.product-type.application";
-		};
-		929CC38127D723580056A5EB /* AROUNDTALKTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 929CC39927D723580056A5EB /* Build configuration list for PBXNativeTarget "AROUNDTALKTests" */;
-			buildPhases = (
-				929CC37E27D723580056A5EB /* Sources */,
-				929CC37F27D723580056A5EB /* Frameworks */,
-				929CC38027D723580056A5EB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				929CC38427D723580056A5EB /* PBXTargetDependency */,
-			);
-			name = AROUNDTALKTests;
-			productName = AROUNDTALKTests;
-			productReference = 929CC38227D723580056A5EB /* AROUNDTALKTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		929CC38B27D723580056A5EB /* AROUNDTALKUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 929CC39C27D723580056A5EB /* Build configuration list for PBXNativeTarget "AROUNDTALKUITests" */;
-			buildPhases = (
-				929CC38827D723580056A5EB /* Sources */,
-				929CC38927D723580056A5EB /* Frameworks */,
-				929CC38A27D723580056A5EB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				929CC38E27D723580056A5EB /* PBXTargetDependency */,
-			);
-			name = AROUNDTALKUITests;
-			productName = AROUNDTALKUITests;
-			productReference = 929CC38C27D723580056A5EB /* AROUNDTALKUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,14 +429,6 @@
 					929CC37127D723560056A5EB = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					929CC38127D723580056A5EB = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 929CC37127D723560056A5EB;
-					};
-					929CC38B27D723580056A5EB = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 929CC37127D723560056A5EB;
-					};
 				};
 			};
 			buildConfigurationList = 929CC36D27D723560056A5EB /* Build configuration list for PBXProject "AROUNDTALK" */;
@@ -215,13 +440,15 @@
 				Base,
 			);
 			mainGroup = 929CC36927D723560056A5EB;
+			packageReferences = (
+				9256FC5C27DADB1A002EF6B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				92DA075E27E754E500114A4F /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 929CC37327D723560056A5EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				929CC37127D723560056A5EB /* AROUNDTALK */,
-				929CC38127D723580056A5EB /* AROUNDTALKTests */,
-				929CC38B27D723580056A5EB /* AROUNDTALKUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,22 +458,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				929CC37D27D723580056A5EB /* Preview Assets.xcassets in Resources */,
 				929CC37A27D723580056A5EB /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929CC38027D723580056A5EB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929CC38A27D723580056A5EB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				9256FC5B27DAD73E002EF6B4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,47 +470,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				929CC37827D723560056A5EB /* ContentView.swift in Sources */,
+				922FAEB327FC1EF700AB29C6 /* SetMyEmojiUseCase.swift in Sources */,
+				929CC37827D723560056A5EB /* MainView.swift in Sources */,
+				92A3C2F327F685AA0002A409 /* CoreLocationDataSourceImpl.swift in Sources */,
+				928706F127E0834A00FC2DC3 /* FirebaseDataBaseDataSourceImpl.swift in Sources */,
+				928706EA27DF9E8800FC2DC3 /* ChatMessageInputView.swift in Sources */,
+				92A3C30427F9DF200002A409 /* ChangeEmojiModalView.swift in Sources */,
+				922FAEAB27FC04D100AB29C6 /* OnboardingViewModel.swift in Sources */,
+				92DA075D27E74EBD00114A4F /* AsyncThrowingStream + map().swift in Sources */,
+				92A3C30027F98C490002A409 /* Color.swift in Sources */,
+				92DA074E27E1CA2200114A4F /* UserDefaultsDataSource.swift in Sources */,
+				928706E627DF9DEF00FC2DC3 /* MapView.swift in Sources */,
 				929CC37627D723560056A5EB /* AROUNDTALKApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929CC37E27D723580056A5EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				929CC38727D723580056A5EB /* AROUNDTALKTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929CC38827D723580056A5EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				929CC39127D723580056A5EB /* AROUNDTALKUITests.swift in Sources */,
-				929CC39327D723580056A5EB /* AROUNDTALKUITestsLaunchTests.swift in Sources */,
+				92DA074327E12AA300114A4F /* FIRDatabaseError.swift in Sources */,
+				922FAEAF27FC18E300AB29C6 /* EmojiRepository.swift in Sources */,
+				928706F527E0ECFC00FC2DC3 /* FIRDatabaseProvider.swift in Sources */,
+				92A3C2F127F682E30002A409 /* CoreLocationDataSource.swift in Sources */,
+				92DA075027E1CA8300114A4F /* FirebaseDataBaseDataSource.swift in Sources */,
+				928706EC27DFA04B00FC2DC3 /* ChatView.swift in Sources */,
+				92734D73280158CB0048B0A2 /* ChangeEmojiViewModel.swift in Sources */,
+				9256FC6927DADEE7002EF6B4 /* FetchArroundTalksUseCase.swift in Sources */,
+				928706EF27E0755000FC2DC3 /* AppDependency.swift in Sources */,
+				928706F327E0EC0500FC2DC3 /* FIRDatabaseAPI.swift in Sources */,
+				928706E827DF9E2300FC2DC3 /* MyChatView.swift in Sources */,
+				92A3C2FD27F989EF0002A409 /* DefaultButton.swift in Sources */,
+				922FAEAD27FC18DC00AB29C6 /* EmojiRepositoryImpl.swift in Sources */,
+				92DA074127E1297F00114A4F /* FIRDatabaseTargetType.swift in Sources */,
+				9256FC6B27DADEF9002EF6B4 /* SendChatUseCase.swift in Sources */,
+				922FAEB127FC1EE500AB29C6 /* FetchEmojiUseCase.swift in Sources */,
+				92A3C2F527F6962C0002A409 /* UserLocationRepository.swift in Sources */,
+				9256FC5927D8D887002EF6B4 /* MainViewModel.swift in Sources */,
+				92DA076A27E76B1100114A4F /* ChatRepositoryImpl.swift in Sources */,
+				92A3C2FB27F984200002A409 /* OnboaringView.swift in Sources */,
+				92DA075227E1D1B700114A4F /* ChatAnnotationItem.swift in Sources */,
+				92734D7027FFDCDB0048B0A2 /* CheckIsEmojiSetUseCase.swift in Sources */,
+				92A3C2F727F69AA40002A409 /* UserLocationRepositoryImpl.swift in Sources */,
+				92A3C35D27FAB5090002A409 /* EmojiTextField.swift in Sources */,
+				92DA076827E767C800114A4F /* ChatRepository.swift in Sources */,
+				929946AC27EA04F900F38FE5 /* String + random().swift in Sources */,
+				92DA076C27E84BE900114A4F /* AsyncThrowingStream + outspread().swift in Sources */,
+				928706DA27DF29BD00FC2DC3 /* ChatEntity.swift in Sources */,
+				92A3C30727FA6BC90002A409 /* FlatButton.swift in Sources */,
+				92A3C30227F98D800002A409 /* Image.swift in Sources */,
+				92DA074C27E1C78D00114A4F /* UserDefaultsDataSourceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		929CC38427D723580056A5EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 929CC37127D723560056A5EB /* AROUNDTALK */;
-			targetProxy = 929CC38327D723580056A5EB /* PBXContainerItemProxy */;
-		};
-		929CC38E27D723580056A5EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 929CC37127D723560056A5EB /* AROUNDTALK */;
-			targetProxy = 929CC38D27D723580056A5EB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		929CC39427D723580056A5EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -330,8 +555,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -359,6 +586,7 @@
 		929CC39527D723580056A5EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -391,8 +619,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -418,10 +648,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AROUNDTALK/Preview Content\"";
 				DEVELOPMENT_TEAM = P5QSBGBP3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "앱을 사용하시려면 사용자의 위치정보가 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "앱을 사용하시려면 사용자의 위치정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,10 +678,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AROUNDTALK/Preview Content\"";
 				DEVELOPMENT_TEAM = P5QSBGBP3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "앱을 사용하시려면 사용자의 위치정보가 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "앱을 사용하시려면 사용자의 위치정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -466,82 +698,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		929CC39A27D723580056A5EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P5QSBGBP3C;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kimxwan0319.AROUNDTALKTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AROUNDTALK.app/AROUNDTALK";
-			};
-			name = Debug;
-		};
-		929CC39B27D723580056A5EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P5QSBGBP3C;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kimxwan0319.AROUNDTALKTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AROUNDTALK.app/AROUNDTALK";
-			};
-			name = Release;
-		};
-		929CC39D27D723580056A5EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P5QSBGBP3C;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kimxwan0319.AROUNDTALKUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AROUNDTALK;
-			};
-			name = Debug;
-		};
-		929CC39E27D723580056A5EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P5QSBGBP3C;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kimxwan0319.AROUNDTALKUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AROUNDTALK;
 			};
 			name = Release;
 		};
@@ -566,25 +722,49 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		929CC39927D723580056A5EB /* Build configuration list for PBXNativeTarget "AROUNDTALKTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				929CC39A27D723580056A5EB /* Debug */,
-				929CC39B27D723580056A5EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		929CC39C27D723580056A5EB /* Build configuration list for PBXNativeTarget "AROUNDTALKUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				929CC39D27D723580056A5EB /* Debug */,
-				929CC39E27D723580056A5EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9256FC5C27DADB1A002EF6B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		92DA075E27E754E500114A4F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9256FC5D27DADB1A002EF6B4 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9256FC5C27DADB1A002EF6B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		92DA075F27E754E500114A4F /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92DA075E27E754E500114A4F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		92DA076127E754E500114A4F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92DA075E27E754E500114A4F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		92DA076327E754E500114A4F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92DA075E27E754E500114A4F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 929CC36A27D723560056A5EB /* Project object */;
 }

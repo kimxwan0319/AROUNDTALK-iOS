@@ -1,14 +1,11 @@
 import Foundation
 
-import CoreLocation
-
-struct ChatEntity: Identifiable {
-    let id = UUID()
-    let isMine: Bool
-    var content: String
+struct ChatEntity {
+    var isMine: Bool = false
+    let code: String
+    var emoji: String
+    let content: String
+    let locationName: String
     let latitude: Double
     let longitude: Double
-    var coordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-    }
 }
