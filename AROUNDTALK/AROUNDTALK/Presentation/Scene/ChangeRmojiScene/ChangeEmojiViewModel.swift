@@ -20,7 +20,7 @@ final class ChangeEmojiViewModel: ObservableObject {
 
     func changeEmoji() {
         self.setMyEmojiUseCase.excute(
-            newEmoji: String(userEmoji.last ?? "👻")
+            newEmoji: String(userEmoji.last!)
         )
         self.userEmoji = .init()
     }

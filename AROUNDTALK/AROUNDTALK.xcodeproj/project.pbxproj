@@ -13,7 +13,6 @@
 		922FAEB127FC1EE500AB29C6 /* FetchEmojiUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922FAEB027FC1EE500AB29C6 /* FetchEmojiUseCase.swift */; };
 		922FAEB327FC1EF700AB29C6 /* SetMyEmojiUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922FAEB227FC1EF700AB29C6 /* SetMyEmojiUseCase.swift */; };
 		9256FC5927D8D887002EF6B4 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256FC5827D8D887002EF6B4 /* MainViewModel.swift */; };
-		9256FC5B27DAD73E002EF6B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9256FC5A27DAD73E002EF6B4 /* GoogleService-Info.plist */; };
 		9256FC5E27DADB1A002EF6B4 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9256FC5D27DADB1A002EF6B4 /* FirebaseDatabase */; };
 		9256FC6927DADEE7002EF6B4 /* FetchArroundTalksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256FC6827DADEE7002EF6B4 /* FetchArroundTalksUseCase.swift */; };
 		9256FC6B27DADEF9002EF6B4 /* SendChatUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256FC6A27DADEF9002EF6B4 /* SendChatUseCase.swift */; };
@@ -43,6 +42,8 @@
 		92A3C30427F9DF200002A409 /* ChangeEmojiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C30327F9DF200002A409 /* ChangeEmojiModalView.swift */; };
 		92A3C30727FA6BC90002A409 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C30627FA6BC90002A409 /* FlatButton.swift */; };
 		92A3C35D27FAB5090002A409 /* EmojiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3C35C27FAB5090002A409 /* EmojiTextField.swift */; };
+		92BA20B0283F3C8700285020 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92BA20AF283F3C8700285020 /* GoogleService-Info.plist */; };
+		92BA20B3283F42CB00285020 /* LocalConsole in Frameworks */ = {isa = PBXBuildFile; productRef = 92BA20B2283F42CB00285020 /* LocalConsole */; };
 		92DA074127E1297F00114A4F /* FIRDatabaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA074027E1297F00114A4F /* FIRDatabaseTargetType.swift */; };
 		92DA074327E12AA300114A4F /* FIRDatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA074227E12AA300114A4F /* FIRDatabaseError.swift */; };
 		92DA074C27E1C78D00114A4F /* UserDefaultsDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA074B27E1C78D00114A4F /* UserDefaultsDataSourceImpl.swift */; };
@@ -65,7 +66,6 @@
 		922FAEB027FC1EE500AB29C6 /* FetchEmojiUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEmojiUseCase.swift; sourceTree = "<group>"; };
 		922FAEB227FC1EF700AB29C6 /* SetMyEmojiUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMyEmojiUseCase.swift; sourceTree = "<group>"; };
 		9256FC5827D8D887002EF6B4 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		9256FC5A27DAD73E002EF6B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9256FC6827DADEE7002EF6B4 /* FetchArroundTalksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArroundTalksUseCase.swift; sourceTree = "<group>"; };
 		9256FC6A27DADEF9002EF6B4 /* SendChatUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendChatUseCase.swift; sourceTree = "<group>"; };
 		92734D6F27FFDCDB0048B0A2 /* CheckIsEmojiSetUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIsEmojiSetUseCase.swift; sourceTree = "<group>"; };
@@ -95,6 +95,7 @@
 		92A3C30327F9DF200002A409 /* ChangeEmojiModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmojiModalView.swift; sourceTree = "<group>"; };
 		92A3C30627FA6BC90002A409 /* FlatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
 		92A3C35C27FAB5090002A409 /* EmojiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTextField.swift; sourceTree = "<group>"; };
+		92BA20AF283F3C8700285020 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92DA074027E1297F00114A4F /* FIRDatabaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseTargetType.swift; sourceTree = "<group>"; };
 		92DA074227E12AA300114A4F /* FIRDatabaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRDatabaseError.swift; sourceTree = "<group>"; };
 		92DA074B27E1C78D00114A4F /* UserDefaultsDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataSourceImpl.swift; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				92DA076227E754E500114A4F /* RxRelay in Frameworks */,
 				9256FC5E27DADB1A002EF6B4 /* FirebaseDatabase in Frameworks */,
 				92DA076427E754E500114A4F /* RxSwift in Frameworks */,
+				92BA20B3283F42CB00285020 /* LocalConsole in Frameworks */,
 				92DA076027E754E500114A4F /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,7 +185,7 @@
 		9256FC6327DADB61002EF6B4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				9256FC5A27DAD73E002EF6B4 /* GoogleService-Info.plist */,
+				92BA20AF283F3C8700285020 /* GoogleService-Info.plist */,
 				92A3C2FE27F98C290002A409 /* Assets */,
 			);
 			path = Resource;
@@ -411,6 +413,7 @@
 				92DA075F27E754E500114A4F /* RxBlocking */,
 				92DA076127E754E500114A4F /* RxRelay */,
 				92DA076327E754E500114A4F /* RxSwift */,
+				92BA20B2283F42CB00285020 /* LocalConsole */,
 			);
 			productName = AROUNDTALK;
 			productReference = 929CC37227D723560056A5EB /* AROUNDTALK.app */;
@@ -443,6 +446,7 @@
 			packageReferences = (
 				9256FC5C27DADB1A002EF6B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				92DA075E27E754E500114A4F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				92BA20B1283F42CA00285020 /* XCRemoteSwiftPackageReference "LocalConsole" */,
 			);
 			productRefGroup = 929CC37327D723560056A5EB /* Products */;
 			projectDirPath = "";
@@ -459,7 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				929CC37A27D723580056A5EB /* Assets.xcassets in Resources */,
-				9256FC5B27DAD73E002EF6B4 /* GoogleService-Info.plist in Resources */,
+				92BA20B0283F3C8700285020 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +737,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		92BA20B1283F42CA00285020 /* XCRemoteSwiftPackageReference "LocalConsole" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/duraidabdul/LocalConsole";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		92DA075E27E754E500114A4F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -748,6 +760,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9256FC5C27DADB1A002EF6B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		92BA20B2283F42CB00285020 /* LocalConsole */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92BA20B1283F42CA00285020 /* XCRemoteSwiftPackageReference "LocalConsole" */;
+			productName = LocalConsole;
 		};
 		92DA075F27E754E500114A4F /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;

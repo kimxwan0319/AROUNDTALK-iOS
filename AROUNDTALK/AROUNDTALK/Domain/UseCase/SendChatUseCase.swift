@@ -19,6 +19,7 @@ class SendChatUseCase {
         let chatCode = String.random(length: 6)
         let locationName = await userLocationRepository.reverseGeocodeNowLocation().thoroughfare!
         let coordinate = userLocationRepository.fetchMyLocation().coordinate
+        chatRepository.addMyChatCode(newChatCode: chatCode)
         try await chatRepository.sendChat(chat: ChatEntity(
             isMine: true,
             code: chatCode,
@@ -28,7 +29,6 @@ class SendChatUseCase {
             latitude: coordinate.latitude,
             longitude: coordinate.longitude
         ))
-        chatRepository.addMyChatCode(newChatCode: chatCode)
     }
 
 }

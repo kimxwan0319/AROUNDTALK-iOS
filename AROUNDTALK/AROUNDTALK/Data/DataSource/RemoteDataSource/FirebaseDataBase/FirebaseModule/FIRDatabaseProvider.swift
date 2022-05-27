@@ -4,7 +4,7 @@ import FirebaseDatabase
 
 class FIRDatabaseProvider<Target: FIRDatabaseTargetType> {
 
-    private var databaseReference = DatabaseReference()
+    private var databaseReference = Database.database().reference()
 
     func getData(api: Target) async throws -> NSDictionary {
         do {

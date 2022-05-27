@@ -54,6 +54,7 @@ extension AppDependency {
         )
         let mainViewModel = MainViewModel(
             fetchArroundTalksUseCase: fetchArroundTalksUseCase,
+            fetchEmojiUseCase: fetchEmojiUseCase,
             sendChatUseCase: sendChatUseCase
         )
         let onboardingViewModel = OnboardingViewModel(
@@ -66,7 +67,8 @@ extension AppDependency {
             changeEmojiViewModel: changeEmojiViewModel
         )
         let mainView = MainView(
-            mainViewModel: mainViewModel
+            mainViewModel: mainViewModel,
+            changeEmojiModalView: changeEmojiModalView
         )
         let onboardingView = OnboardingView(
             onboardingViewModel: onboardingViewModel,

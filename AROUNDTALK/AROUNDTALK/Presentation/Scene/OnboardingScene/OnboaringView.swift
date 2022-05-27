@@ -32,7 +32,7 @@ struct OnboardingView: View {
             DefaultButton(
                 buttonText: "시작하기",
                 action: {
-                    print("start")
+                    self.onboardingViewModel.moveToMainView()
                 }
             )
         }

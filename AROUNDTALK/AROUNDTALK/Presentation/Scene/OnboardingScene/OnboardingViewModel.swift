@@ -20,13 +20,8 @@ final class OnboardingViewModel: ObservableObject {
         self.IsChangeEmojiModalShown = true
     }
 
-    func dismissChangeEmojiModalView() {
-        self.IsChangeEmojiModalShown = false
-    }
-
     func fetchUserEmoji() {
         self.userEmoji = self.fetchEmojiUseCase.excute() ?? "👻"
     }
-
 
 }

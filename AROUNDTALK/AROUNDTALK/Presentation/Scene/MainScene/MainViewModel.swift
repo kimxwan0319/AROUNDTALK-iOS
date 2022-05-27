@@ -9,16 +9,21 @@ final class MainViewModel: NSObject, ObservableObject {
         latitudinalMeters: 100,
         longitudinalMeters: 100
     )
+    @Published var userEmoji: String = .init()
     @Published var chatText: String = .init()
     @Published var chatItems: [ChatAnnotationItem] = .init()
+    @Published var IsChangeEmojiModalShown = false
 
     private var fetchArroundTalksUseCase: FetchArroundTalksUseCase
+    private var fetchEmojiUseCase: FetchEmojiUseCase
     private var sendChatUseCase: SendChatUseCase
 
 
     init(fetchArroundTalksUseCase: FetchArroundTalksUseCase,
+         fetchEmojiUseCase: FetchEmojiUseCase,
          sendChatUseCase: SendChatUseCase) {
         self.fetchArroundTalksUseCase = fetchArroundTalksUseCase
+        self.fetchEmojiUseCase = fetchEmojiUseCase
         self.sendChatUseCase = sendChatUseCase
     }
 
@@ -35,8 +40,17 @@ final class MainViewModel: NSObject, ObservableObject {
         }
     }
 
+    func fetchUserEmoji() {
+        self.userEmoji = self.fetchEmojiUseCase.excute()!
+    }
+
     func sendChat() async throws {
+        DispatchQueue.main.async { [weak self] in self?.chatText = "" }
         try await sendChatUseCase.execute(content: self.chatText)
+    }
+
+    func showChangeEmojiModalView() {
+        self.IsChangeEmojiModalShown = true
     }
 
 }
@@ -44,9 +58,13 @@ final class MainViewModel: NSObject, ObservableObject {
 extension MainViewModel {
 
     private func insertChatItemWithDeduplication(_ chatItem: ChatAnnotationItem) {
-        var chatItemsAsSet = Set(self.chatItems)
-        chatItemsAsSet.insert(chatItem)
-        self.chatItems = Array(chatItemsAsSet)
+        DispatchQueue.main.async { [weak self] in
+            if let self = self {
+                var chatItemsAsSet = Set(self.chatItems)
+                chatItemsAsSet.insert(chatItem)
+                self.chatItems = Array(chatItemsAsSet)
+            }
+        }
     }
 
 }

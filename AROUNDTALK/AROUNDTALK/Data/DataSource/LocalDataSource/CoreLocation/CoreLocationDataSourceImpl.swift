@@ -18,7 +18,9 @@ class CoreLocationDataSourceImpl: NSObject, CoreLocationDataSource {
     func reverseGeocodeNowLocation() async -> CLPlacemark {
         let clGeocoder = CLGeocoder()
         return await withCheckedContinuation { continuation in
-            clGeocoder.reverseGeocodeLocation(self.fetchMyLocation()) { placemarks, _ in
+            clGeocoder.reverseGeocodeLocation(self.fetchMyLocation()) { placemarks, error in
+                print(placemarks!.first!)
+                print(placemarks!.first!.thoroughfare!)
                 continuation.resume(returning: placemarks!.first!)
             }
         }
