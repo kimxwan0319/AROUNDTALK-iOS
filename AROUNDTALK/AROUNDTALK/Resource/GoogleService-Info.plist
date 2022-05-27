@@ -30,5 +30,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:850113357264:ios:9d7591e02c76e72854c5d5</string>
+	<key>DATABASE_URL</key>
+	<string>https://aroundtalk-0-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>
 </plist>
