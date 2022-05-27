@@ -6,6 +6,8 @@ class CoreLocationDataSourceImpl: NSObject, CoreLocationDataSource {
 
     private var locationManager = CLLocationManager()
 
+    private var lastReversedGeocodeNowLocation: CLPlacemark?
+
     override init() {
         super.init()
         self.locationManager.delegate = self
@@ -16,12 +18,17 @@ class CoreLocationDataSourceImpl: NSObject, CoreLocationDataSource {
     }
 
     func reverseGeocodeNowLocation() async -> CLPlacemark {
-        let clGeocoder = CLGeocoder()
-        return await withCheckedContinuation { continuation in
-            clGeocoder.reverseGeocodeLocation(self.fetchMyLocation()) { placemarks, error in
-                print(placemarks!.first!)
-                print(placemarks!.first!.thoroughfare!)
-                continuation.resume(returning: placemarks!.first!)
+        if let lastReversedGeocodeNowLocation = self.lastReversedGeocodeNowLocation {
+            print("???")
+            return lastReversedGeocodeNowLocation
+        } else {
+            print("!!!")
+            let clGeocoder = CLGeocoder()
+            return await withCheckedContinuation { continuation in
+                clGeocoder.reverseGeocodeLocation(self.fetchMyLocation()) { [weak self] placemarks, error in
+                    self?.lastReversedGeocodeNowLocation = placemarks!.first!
+                    continuation.resume(returning: placemarks!.first!)
+                }
             }
         }
     }
